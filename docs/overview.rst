@@ -1,0 +1,24 @@
+Mikado CMS
+==========
+
+What I am looking for
+
+1. My own CMS that can cope with low level demands (1-10K req / day).
+2. An ability to store mikado documents securely in the cloud / site 
+   (I am assuming everything is for remote distributed workers, so
+    redthedocs privately, a dashboard for the company (private)
+   )
+
+3. CMS
+   v.0.1 ::
+   
+         Runs on gunicorn behind nginx
+         Deploys from fabfile via bamboo?
+         serves templated file depending on given path
+         RUns on three domains       
+
+   v 0.2 analytics
+         Google analytics
+         funnels?
+         
+

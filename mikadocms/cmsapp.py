@@ -4,15 +4,6 @@ from flask import send_from_directory
 import os
 import pprint
 
-app = Flask("mikadocms", static_folder="docroot")
-THISDIR = os.path.abspath(os.path.dirname(__file__))
-DOCROOT = os.path.join(THISDIR, 'docroot')
-
-@app.route('/favicon.ico')
-def favicon():
-    return send_from_directory(DOCROOT,
-                              'favicon.ico',
-                               mimetype='image/vnd.microsoft.icon')
 '''
 This is supposed to be the heart of CMS
 maybe I want my own route mapper???
@@ -50,34 +41,72 @@ Next steps:
 
 * google anlytics
 * ability to store cookies and give each browser a unique uuid
-* see if I can link visitor_uuid to landing page
+* see if I can link visitor_ud to landing page
+
+useage:
+
+* run this file (behind nginx etc)
+* this will hopefully allow me to serve HTML fragments
+  from doccache - these can be generated rst style from
+  REST
+* Then the rest of the page is built
+* for now its not too much 
 
 
 '''
 
+
+
+
+def make_app(name, confd):
+    """
+    an attempt at an app_factory
+    """
+    open("/tmp/log", "a").write("APPFACTORYCALLED\n")
+    app = Flask(name, static_folder=confd["DOCROOT"])
+    app.config.update(confd)
+    app.add_url_rule("/hello", view_func=hello)
+    app.add_url_rule("/favicon", view_func=favicon)
+    app.add_url_rule("/cms/<path>", view_func=cms)        
+    
+    return app
+    
+
+def hello():
+    return "hello"
+
+
+def favicon():
+    return send_from_directory(app.config['DOCROOT'],
+                              'favicon.ico',
+                               mimetype='image/vnd.microsoft.icon')
+
 def get_tmpl():
-    return open(os.path.join(THISDIR, "index.tmpl")).read()
+    return open(os.path.join(app.config['TMPLROOT'], "index.tmpl")).read()
 
 def get_pagetxt(path_requested):
     """ """
     txt = open(path_requested).read()
     return txt
 
-@app.route('/', defaults={'path': ''})
-@app.route('/<path:path>')
+
 def cms(path):
-    path_requested = os.path.join(DOCROOT, path) + ".htm"
+    path_requested = os.path.join(app.config['DOCROOT'], path) + ".htm"
     if not os.path.isfile(path_requested): abort(404)
     t = get_tmpl()
     body = get_pagetxt(path_requested)
 
     return t % {"body_filler": body}
 
-#app.wsgi_app = Upperware(app.wsgi_app)
-
-#app = Upperware(_app)
-## basically we do nothing expect assume /static is served
+from waitress import serve
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5001)
+    #sys.argv[1:][0]
+    conf={"DOCROOT": '/usr/home/pbrian/src/public/mikadoCMS/mikadocms/docroot',
+          "TMPLROOT": '/usr/home/pbrian/src/public/mikadoCMS/mikadocms/tmplroot',
+    }
+    
+    app = make_app("mikado", conf)
+    serve(app.wsgi_app,host="0.0.0.0",port=8000)            
+    
