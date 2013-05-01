@@ -3,6 +3,7 @@ from webob import Request, Response
 from flask import send_from_directory
 import os
 import pprint
+from waitress import serve
 
 '''
 This is supposed to be the heart of CMS
@@ -98,7 +99,7 @@ def cms(path):
 
     return t % {"body_filler": body}
 
-from waitress import serve
+
 
 
 if __name__ == "__main__":
