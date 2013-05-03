@@ -129,10 +129,10 @@ def cms(path):
 
 if __name__ == "__main__":
 
-   HERE = os.path.abspath(os.path.dirname(__file__))
-   conf={"DOCROOT": os.path.join(HERE,'docroot'),
-         "TMPLROOT": os.path.join(HERE,'tmplroot'),
-   }
+    HERE = os.path.abspath(os.path.dirname(__file__))
+    conf={"DOCROOT": os.path.join(HERE,'docroot'),
+          "TMPLROOT": os.path.join(HERE,'tmplroot'),
+    }
 
     
     app = make_app("mikado", conf)
