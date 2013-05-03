@@ -128,10 +128,12 @@ def cms(path):
 
 
 if __name__ == "__main__":
-    #sys.argv[1:][0]
-    conf={"DOCROOT": '/usr/home/pbrian/src/public/mikadoCMS/mikadocms/docroot',
-          "TMPLROOT": '/usr/home/pbrian/src/public/mikadoCMS/mikadocms/tmplroot',
-    }
+
+   HERE = os.path.abspath(os.path.dirname(__file__))
+   conf={"DOCROOT": os.path.join(HERE,'docroot'),
+         "TMPLROOT": os.path.join(HERE,'tmplroot'),
+   }
+
     
     app = make_app("mikado", conf)
     serve(app.wsgi_app,host="0.0.0.0",port=8000)            
