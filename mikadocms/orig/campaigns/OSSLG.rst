@@ -80,7 +80,7 @@ Next steps
 ----------
 
 I am organising a fringe meeting at the Local Government Association `Annual
-Conference < http://sites.idea.gov.uk/annual-conference/>`_ - basically I want
+Conference <http://sites.idea.gov.uk/annual-conference/>`_ - basically I want
 to find my 4x4 councillors there. If I cannot get 4 leaders or Chief Execs out
 of 500 expected to turn up to say "yes, I want to save money by more accurately
 meeting my needs" I need to hang up the suit.
