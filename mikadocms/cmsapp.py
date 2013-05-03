@@ -4,6 +4,7 @@ from flask import send_from_directory
 import os
 import pprint
 from waitress import serve
+from chunks import allchunks
 
 '''
 This is supposed to be the heart of CMS
@@ -54,6 +55,7 @@ useage:
 * for now its not too much 
 
 
+
 '''
 
 
@@ -64,42 +66,65 @@ def make_app(name, confd):
     an attempt at an app_factory
     """
     open("/tmp/log", "a").write("APPFACTORYCALLED\n")
-    app = Flask(name, static_folder=confd["DOCROOT"])
+    app = Flask(name)
     app.config.update(confd)
-    app.add_url_rule("/hello", view_func=hello)
+    app.add_url_rule("/", view_func=index)
     app.add_url_rule("/favicon", view_func=favicon)
-    app.add_url_rule("/cms/<path>", view_func=cms)        
+    app.add_url_rule("/cms/<path:path>", view_func=cms)        
     
     return app
     
 
-def hello():
-    return "hello"
+def index():
+    t = get_tmpl(tmpltype="index")
+    return t % allchunks
 
 
+    
 def favicon():
     return send_from_directory(app.config['DOCROOT'],
                               'favicon.ico',
                                mimetype='image/vnd.microsoft.icon')
 
-def get_tmpl():
-    return open(os.path.join(app.config['TMPLROOT'], "index.tmpl")).read()
+def get_tmpl(tmpltype="internal"):
+    if tmpltype == "index":
+        tmpl = "index.tmpl"
+    elif tmpltype == "internal":
+        tmpl = "internal.tmpl"
+    else:
+        abort(404)
+    
+    return open(os.path.join(app.config['TMPLROOT'], tmpl)).read()
 
+    
 def get_pagetxt(path_requested):
     """ """
     txt = open(path_requested).read()
     return txt
 
+    
+
 
 def cms(path):
+    
     path_requested = os.path.join(app.config['DOCROOT'], path) + ".htm"
-    if not os.path.isfile(path_requested): abort(404)
-    t = get_tmpl()
+    if path_requested.find("/.htm") != -1:
+        #horrible hack
+        path_requested = path_requested.replace("/.htm", "/index.htm")
+        
+    if not os.path.isfile(path_requested):
+        print "aborting", path_requested
+        abort(404)
+        
+    t = get_tmpl(tmpltype="internal")
     body = get_pagetxt(path_requested)
+    allchunks.update( {"itemcontent": body})
+    return t % allchunks
 
-    return t % {"body_filler": body}
 
 
+
+    
 
 
 if __name__ == "__main__":
