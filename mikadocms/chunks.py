@@ -110,15 +110,24 @@ License:
   <script src="/static/javascripts/jquery.min.js" type="text/javascript"></script>
   <script src="/static/javascripts/bootstrap.js" type="text/javascript"></script>
   <script src="/static/javascripts/script.js" type="text/javascript"></script>
-  <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID. mathiasbynens.be/notes/async-analytics-snippet -->
-  <script type='text/javascript'>
-    //<![CDATA[
-      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-      s.parentNode.insertBefore(g,s)}(document,'script'));
-    //]]>
-  </script>
+
+<!-- Google Tracking code -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36184336-1']);
+  _gaq.push(['_setDomainName', 'mikadosoftware.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- /Google Tracking code -->
+
 </html>
 """
 
