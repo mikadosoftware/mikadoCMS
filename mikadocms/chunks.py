@@ -22,7 +22,9 @@ HDR="""<!DOCTYPE html>
     <link href="/static/stylesheets/theme.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="/static/stylesheets/fonts.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="/static/stylesheets/mikado.css" media="screen" rel="stylesheet" type="text/css" />
-  </head>
+<!-- Google verification -->
+<meta name="google-site-verification" content="uKNzO9CmffmocPVazVVI-nzcAlH5aWrkRDRHgpxE2Ls" />
+</head>
 """
 
 TOPPAGE="""
