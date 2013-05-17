@@ -121,10 +121,7 @@ def cms(path):
     allchunks.update( {"itemcontent": body})
     return t % allchunks
 
-
-
-
-    
+  
 
 
 if __name__ == "__main__":
