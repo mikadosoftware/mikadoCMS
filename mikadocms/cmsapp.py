@@ -64,13 +64,23 @@ useage:
 def make_app(name, confd):
     """
     an attempt at an app_factory
+
+
+    routing:
+    every path is supplied to cms() function.
+    This means that the blog must serve off a different port and
+    be routed with a different 
     """
     open("/tmp/log", "a").write("APPFACTORYCALLED\n")
     app = Flask(name)
     app.config.update(confd)
-    app.add_url_rule("/", view_func=index)
+
     app.add_url_rule("/favicon", view_func=favicon)
-    app.add_url_rule("/cms/<path:path>", view_func=cms)        
+    app.add_url_rule("/", view_func=index, defaults={'path': ''} )
+    app.add_url_rule("/<path:path>", view_func=cms)
+#    app.add_url_rule("/blog/<path:path>", view_func=blog)    
+
+
     
     return app
     
@@ -122,7 +132,8 @@ def cms(path):
     return t % allchunks
 
   
-
+def blog(path):
+    return "helo" + str(path)
 
 if __name__ == "__main__":
 
