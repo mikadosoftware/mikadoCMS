@@ -91,5 +91,5 @@ your council let me know.
 Contact me if you want to help.  I could do with it.
 
 
-This is actually turning into a hefty piece for me - and you can read more about it `here </cms/campaigns/OSSLG>`_
+This is actually turning into a hefty piece for me - and you can read more about it `here </campaigns/OSSLG>`_
 

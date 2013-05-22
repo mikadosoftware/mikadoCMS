@@ -1,0 +1,81 @@
+Remote working
+ What statistics support the idea that IT staff (developers and operations)
+  are being able to work remotely (from home etc) more and more?
+ What has changed / Why now?
+  * Skills shortage?
+  * Increased availability of comms technology (skype)
+  * Changes in business processes (continuous intergration and delivery)
+ Competitive advantages
+  Is it an advantage to be able to hire the best from anywhere in the world?
+ Overheads
+  Actually can we cut out the project managers and the middle management 
+  I mean if the work of developers can be seen by anyone in the company 
+  that day, why have so much supervision?
+ Conclusion (Supportd I hope by stats)
+  IT staff are able to work remotely more and more.  Companies are slowing
+  allowing it to happen.  Main drivers are that automated delivery of code
+  to live systems means we can cut out the middle layer of supervision and
+  operations and still have confidence to systems will work.
+
+  So to get more remote working in IT, we need more continuous delivery.
+
+Turn your Release Headaches into a competitive advantage
+--------------------------------------------------------
+
+Its the right tagline.
+
+http://www.thoughtworks.com/continuous-delivery
+
+
+Reduce risks through conitunoius delviert
+-----------------------------------------
+
+
+Find out what your customers really want - release often and test.
+------------------------------------------------------------------
+
+
+Obstacles to COntiuous delivery - and how to overcome them
+----------------------------------------------------------
+
+
+Rackspace, ubuntu and continuous delivery
+-----------------------------------------
+
+How to upgrade ytourt systems without downtime. 20 times a day
+--------------------------------------------------------------
+
+Use nginx swap over and build the next app in background.
+Build next app as part of the cont delivery  - if it passes all tests,
+hell, use it !!!
+
+
+
+Big data takes over enterprise
+------------------------------
+
+http://readwrite.com/2013/02/11/big-data-redhats-jim-whitehurst-looks-20-years-into-the-future
+
+
+Technical marketing
+-------------------
+
+http://www.grandvisual.com/insights/
+
+Apps as a convenivce function to secruity function
+--------------------------------------------------
+
+My nationwide app
+forbes - realists guide marketing 2013
+
+
+Moving up the value chain
+-------------------------
+
+personal story
+
+
+The future of work - programmer anarchy is the new normal
+---------------------------------------------------------
+
+
