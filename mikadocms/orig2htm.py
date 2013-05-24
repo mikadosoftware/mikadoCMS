@@ -31,7 +31,9 @@ def walk_orig(rootpath):
 
 
 if __name__ == '__main__':
-    rootpath = sys.argv[1:][0]
-    DESTDIR =  sys.argv[1:][1]
+    configpath = sys.argv[1:][0]
+    import conf
+    confd = conf.get_config(configpath)
+    DESTDIR = confd['cms']['docroot']
     lib.inject_config({}) ## dummy to handle deficiences in bookmkaer
-    walk_orig(rootpath)
+    walk_orig(confd['cms']['rstroot'])

@@ -4,10 +4,10 @@ from flask import send_from_directory
 import os
 import pprint
 from waitress import serve
-from chunks import allchunks
 import conf
 from optparse import OptionParser
 import logging
+logging.basicConfig(level=logging.DEBUG)
 
 '''
 This is supposed to be the heart of CMS
@@ -74,20 +74,39 @@ def make_app(name, confd):
     This means that the blog must serve off a different port and
     be routed with a different 
     """
-    open("/tmp/log", "a").write("APPFACTORYCALLED\n")
     app = Flask(name)
-    app.config.update(confd)
+    app.config.update(confd, static_folder="foo")
 
-    app.add_url_rule("/favicon", view_func=favicon)
     app.add_url_rule("/", view_func=index)
+    app.add_url_rule("/assets/<path:filename>",
+                     view_func=servestatic)#should use wsgi middleware or nginx
     app.add_url_rule("/<path:path>", view_func=cms)
 #    app.add_url_rule("/blog/<path:path>", view_func=blog)    
-
-
-    
     return app
-    
 
+def servestatic(filename):
+    """
+    """
+    print "serving ", filename
+    return send_from_directory(confd['cms']['static_path'],
+                                       filename)
+
+def getchunks(chunkdir):
+    """
+    given a dir where there are text files we want to use as
+    chunks of HTML, return a dict with those txt files as strings
+    """
+    allchunks = {}
+    files = [f for f in os.listdir(chunkdir)
+             if os.path.splitext(f)[1] == '.tmpl']
+    logging.debug(files)
+    for f in files:
+        key = f.split(".")[0] #foo.tmpl -> foo
+        fpath = os.path.join(chunkdir, f)  #foo.tmpl -> /tmp/foo.tmpl
+        allchunks[key] = open(fpath).read()
+    return allchunks
+    
+    
 def index():
     t = get_tmpl(tmpltype="index")
     return t % allchunks
@@ -100,6 +119,9 @@ def favicon():
                                mimetype='image/vnd.microsoft.icon')
 
 def get_tmpl(tmpltype="internal"):
+    """
+    return either internal or index page tmpl.
+    """
     if tmpltype == "index":
         tmpl = "index.tmpl"
     elif tmpltype == "internal":
@@ -132,6 +154,8 @@ def cms(path):
     t = get_tmpl(tmpltype="internal")
     body = get_pagetxt(path_requested)
     allchunks.update( {"itemcontent": body})
+    print allchunks.keys()
+    print allchunks['header']
     return t % allchunks
 
   
@@ -154,6 +178,11 @@ if __name__ == "__main__":
     opts, args = parse_args()
     confd = conf.get_config(opts.confpath)
     lgr.debug(pprint.pformat(confd))
+
+    ##chunks
+    allchunks = getchunks(confd['cms']['chunkdir'])
+    print allchunks.keys()
+    
     app = make_app("mikado", confd)
     serve(app.wsgi_app,host="0.0.0.0",port=8000)            
     
