@@ -5,6 +5,9 @@ import os
 import pprint
 from waitress import serve
 from chunks import allchunks
+import conf
+from optparse import OptionParser
+import logging
 
 '''
 This is supposed to be the heart of CMS
@@ -76,7 +79,7 @@ def make_app(name, confd):
     app.config.update(confd)
 
     app.add_url_rule("/favicon", view_func=favicon)
-    app.add_url_rule("/", view_func=index, defaults={'path': ''} )
+    app.add_url_rule("/", view_func=index)
     app.add_url_rule("/<path:path>", view_func=cms)
 #    app.add_url_rule("/blog/<path:path>", view_func=blog)    
 
@@ -92,7 +95,7 @@ def index():
 
     
 def favicon():
-    return send_from_directory(app.config['DOCROOT'],
+    return send_from_directory(app.config['cms']['docroot'],
                               'favicon.ico',
                                mimetype='image/vnd.microsoft.icon')
 
@@ -104,7 +107,7 @@ def get_tmpl(tmpltype="internal"):
     else:
         abort(404)
     
-    return open(os.path.join(app.config['TMPLROOT'], tmpl)).read()
+    return open(os.path.join(app.config['cms']['tmplroot'], tmpl)).read()
 
     
 def get_pagetxt(path_requested):
@@ -117,7 +120,7 @@ def get_pagetxt(path_requested):
 
 def cms(path):
     
-    path_requested = os.path.join(app.config['DOCROOT'], path) + ".htm"
+    path_requested = os.path.join(app.config['cms']['docroot'], path) + ".htm"
     if path_requested.find("/.htm") != -1:
         #horrible hack
         path_requested = path_requested.replace("/.htm", "/index.htm")
@@ -135,14 +138,22 @@ def cms(path):
 def blog(path):
     return "helo" + str(path)
 
+def parse_args():
+    parser = OptionParser()
+    parser.add_option("--config", dest="confpath",
+                      help="path to ini file")
+    (options, args) = parser.parse_args()
+    return (options, args)    
+
+
 if __name__ == "__main__":
 
-    HERE = os.path.abspath(os.path.dirname(__file__))
-    conf={"DOCROOT": os.path.join(HERE,'docroot'),
-          "TMPLROOT": os.path.join(HERE,'tmplroot'),
-    }
-
+    lgr = logging.getLogger("mikadoCMS")
+    logging.basicConfig(level=logging.DEBUG)
     
-    app = make_app("mikado", conf)
+    opts, args = parse_args()
+    confd = conf.get_config(opts.confpath)
+    lgr.debug(pprint.pformat(confd))
+    app = make_app("mikado", confd)
     serve(app.wsgi_app,host="0.0.0.0",port=8000)            
     
