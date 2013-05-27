@@ -59,6 +59,20 @@ useage:
 
 
 
+
+WHy so much HTML in the scafoolding
+- I am using bootstrap - so we need to use HTML scaffolding.
+This is fine, and the chunks approach means I can compose a HTML page fairly well, and as
+I get to know more bootstrap, the chunks will get finer grained, heading towards a DSL
+to describe a template.  That might be a bit advanced but there is no reason this CMS cannot
+sensibly support a numerous templated styles plus simple ReSt based content.
+
+Notes on mixins in Less
+http://ruby.bvision.com/blog/please-stop-embedding-bootstrap-classes-in-your-html
+or copy compress.rb idea
+http://www.sitepoint.com/css-frameworks-semantic-class-names/
+
+
 '''
 
 
@@ -181,8 +195,8 @@ if __name__ == "__main__":
 
     ##chunks
     allchunks = getchunks(confd['cms']['chunkdir'])
-    print allchunks.keys()
+    lgr.info(allchunks.keys())
     
-    app = make_app("mikado", confd)
+    app = make_app("mikadocms", confd)
     serve(app.wsgi_app,host="0.0.0.0",port=8000)            
     
