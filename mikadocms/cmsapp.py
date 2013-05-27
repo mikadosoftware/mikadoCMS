@@ -198,5 +198,5 @@ if __name__ == "__main__":
     lgr.info(allchunks.keys())
     
     app = make_app("mikadocms", confd)
-    serve(app.wsgi_app,host="0.0.0.0",port=8000)            
+    serve(app.wsgi_app,host="0.0.0.0",port=int(confd['cms']['port']))            
     
