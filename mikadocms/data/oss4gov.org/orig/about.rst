@@ -157,14 +157,14 @@ This way, real people in government will be able to help real users with Open
 Source tools that cost us the taxpayer only what they cost to build.
 
 
-There will be an email list here tomorrow.
+Please sign up at the top of the page.
 
-And updates regularly.
 
 Updates
 -------
 
-Ok, not that regularly.  Please check back.
+I will post links here - and mail out to the list, so make sure you sign up :-)
+
 
 
      
