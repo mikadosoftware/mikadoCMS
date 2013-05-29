@@ -140,7 +140,7 @@ What are we going to do about it?
    - Now !
 
 
-I am going to the `LGA conference
+I am going to the `LGA's conference
 <http://sites.idea.gov.uk/annual-conference/>`_ and will be hosting a Fringe
 Breakfast on July 3rd at 8am in Manchester.  Some people more intelligent and
 entertaining than me will be speaking, so don't worry.
