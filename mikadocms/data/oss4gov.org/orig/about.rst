@@ -2,27 +2,28 @@
 You see, I am lucky - I get paid to write open source software.  For a
 university, in Texas.
 
-.. figure: /assets/images/pbrian_headshot.jp
+.. figure:: https://mw2.google.com/mw-panoramio/photos/medium/12149191.jpg
+     :width: 250 px
+     :height: 140 px
 
-       This one
+     This one.
 
-Which is actually a great job, but that's not the point.
-The point is that I recently I went for a lunchtime walk and
+Which is actually a great job, but that's not the point.  The point is I
 realised that people thousands of miles away were savvy enough to want Open
 Source Software built for them, but my local council *on the same road as my
 office* was not.
 
 .. figure: /assets/images/pbrian_headshot.jg
 
-       This road
+       This road.
 
 Do you know there is a list describing everything government is supposed to do?
 Its called the `Local Government Service Listing
 <http://standards.esd.org.uk>`_, and its got everything in it, from Fire Brigade
 Training to Council Tax Collection and Planning Applications.
 
-In all, over 2100 services, and every single one is going to become digital, and rely on 
-someone to write their software.  
+In all, over 2100 services, and every single one is going to become digital, and
+rely on someone to write their software.
 
 And how many of those will use Open Source software?  Good Question.
 
@@ -31,11 +32,12 @@ Ok, so what is this Open Source Software?
 
 Its pretty simple, honest. You write a book for your little boy about pirates
 and otters. You just print it on your inkjet and then you put it in a
-library. Now anyone can come read it.  Anyone does, and one of them thinks, I
-would rather it was about a girl, so my daughter can relate to it better.  And
-she takes your book makes a copy and changes the *he* to *she*, and has fairy
-pirates and she puts it back and later someone else changes the pirate ships to
-space ships and so it goes.
+library. Now anyone can come read it.  
+
+Anyone does, and one of them thinks, I would rather it was about a girl, so my
+daughter can relate to it better.  And she takes your book makes a copy and
+changes the *he* to *she*, and has fairy pirates and she puts it back and later
+someone else changes the pirate ships to space ships and so it goes.
 
 Thats it really.  Anyone has permission to write software, just as anyone has
 permission to write books.  There are only two questions - did they write *high
@@ -46,7 +48,7 @@ High quality Open Source Software
 
 Now here is a fun statement - Open Source Software is higher quality than the proprietary equivalents.
 
-`Coverity <www.coverity.com>`_ publish a annual comparison of major software
+`Coverity <http://www.coverity.com>`_ publish a annual comparison of major software
 projects "out there".  For all their projects, Open Source has less bugs than
 the proprietary equivalents till the size of project reaches a million lines of
 code. 
