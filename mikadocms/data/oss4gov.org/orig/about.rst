@@ -140,22 +140,27 @@ What are we going to do about it?
    - Now !
 
 
-I am going to the LGA conference and will be hosting a Fringe Breakfast on July
-3rd at 8am in manchester.  Some people more intelligent and entertaining than me
-will be speaking, so don't worry.
+I am going to the `LGA conference
+<http://sites.idea.gov.uk/annual-conference/>`_ and will be hosting a Fringe
+Breakfast on July 3rd at 8am in Manchester.  Some people more intelligent and
+entertaining than me will be speaking, so don't worry.
 
 The goal - to find 4 services that at least 4 council leaders want and will need
-to replace this year.  Then get them to fund 1/4 of their budget into a G-Cloud
-based Open Development pilot project.  We (hopefully pretty soon I will be we)
-shall setup a committee of Open Source Worthies, who will take on project oversight.
-Not tell people what to do like managers, but guide and mentor projects to find their own ways
-within the best practises of Open Source development. 
+to replace this year.  
+
+Then get them to fund 1/4 of their budget into a G-Cloud
+based Open Development pilot project.  
+
+We (hopefully pretty soon I will be we) shall setup a committee of Open Source
+Worthies, who will take on project oversight, to guide and mentor projects to
+find their own ways within the best practises of Open Source development.
 
 And then arrange commercial cloud companies to host and support the projects.  
 
 This way, real people in government will be able to help real users with Open
 Source tools that cost us the taxpayer only what they cost to build.
 
+As it *should* be.
 
 Please sign up at the top of the page.
 
