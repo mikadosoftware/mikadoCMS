@@ -13,9 +13,9 @@ realised that people thousands of miles away were savvy enough to want Open
 Source Software built for them, but my local council *on the same road as my
 office* was not.
 
-.. figure: /assets/images/pbrian_headshot.jg
+.. figure:: /assets/images/gibsondrive.jpg
 
-       This road.
+       This road. The rainy one.
 
 Do you know there is a list describing everything government is supposed to do?
 Its called the `Local Government Service Listing
@@ -26,6 +26,7 @@ In all, over 2100 services, and every single one is going to become digital, and
 rely on someone to write their software.
 
 And how many of those will use Open Source software?  Good Question.
+
 
 Ok, so what is this Open Source Software?
 -----------------------------------------
