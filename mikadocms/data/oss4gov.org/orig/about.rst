@@ -49,36 +49,37 @@ High quality Open Source Software
 
 Now here is a fun statement - Open Source Software is higher quality than the proprietary equivalents.
 
-`Coverity <http://www.coverity.com>`_ publish a annual comparison of major software
-projects "out there".  For all their projects, Open Source has less bugs than
-the proprietary equivalents till the size of project reaches a million lines of
-code. 
+`Coverity <http://www.coverity.com>`_ publish a annual comparison of major
+software projects "out there".  For all their projects, Open Source has less
+bugs than the proprietary equivalents till the size of project reaches a million
+lines of code.
 
 Basically this is public evidence for one of the software industry's dirty
-secrets - it turns out if you think someone is going to read your code 
-you take more care because you want the respect of your peers.  I mean
-if PG Wodehouse was writing books just for his landlord to read, and no-one else was
-going to see them, would he put in *that* much extra effort?
+secrets - it turns out if you think someone is going to read your code you take
+more care because you want the respect of your peers.  I mean if PG Wodehouse
+was writing books just for his landlord to read, and no-one else was going to
+see them, would he put in *that* much extra effort?
 
-Add to that the near pathological development cultures in many many big
-companies and coverity's figures make a lot of sense.
+Now, taking a bit of care is not the whole reason - it also turns out that 
+many companies have software development cultures that are, what's the polite word, *sub-optimal* for writing high-quality code.  It took a long time for newspapers to develop their current process for churning out high quality writing on a regular basis.  Most companies do not develop software the way the best software companies do.  But all the best software companies look a lot like the best Open Source Projects.  Most of them use each others tools.
 
 
 
 Does it scratch your itch?
 --------------------------
 
-So I looked at the government tender sites.  I even wrote some scraping software to help me anlyse it. [#]_
-Anyway of 70 tenders I could snaffle that day, 1, yes *one* mentioned using Open Source.
+So I looked at the government tender sites.  I even wrote some scraping software
+to help me analyse it. [#]_ Anyway of 70 tenders I could snaffle that day, 1,
+yes *one*, mentioned using Open Source.
 
-No-one is building Open Source for governments - at least they aren't asking for it.
+For a given rounding error, no-one is building Open Source Software for governments - and on my analysis, no-one is *asking* them to.
 
 How many ?
 ----------
 
-There are over 2000 services that UK local authority bodies are funded in order to provide
-Each of those 2000 services will soon be delivered, in part or wholly, through digital 
-means, and thus be entirely dependant on software.
+There are over 2000 services that UK local authority bodies are expected to
+provide. Each of those 2000 services will soon be delivered, in part or wholly,
+through digital means, and thus be entirely dependant on software.
 
 That means that if we are lucky, we taxpayers will be splodging out real cash to
 (big, often American) companies for all but 28 of the 2000 services.
@@ -115,7 +116,7 @@ need do is say "yes, that one".
 
 In theory all we would need to do is find a couple of councils who needed, say,
 a new plugin for a planning application system, put it on G-Cloud, and the
-councils could pay for development of their needs, openly, deliverd through
+councils could pay for development of their needs, openly, delivered through
 G-Cloud and at a marginal cost.  And the other 431 councils could come along and
 get a copy.
 
@@ -143,20 +144,19 @@ What are we going to do about it?
 
 I am going to the `LGA's conference
 <http://sites.idea.gov.uk/annual-conference/>`_ and will be hosting a Fringe
-Breakfast on July 3rd at 8am in Manchester.  Some people more intelligent and
-entertaining than me will be speaking, so don't worry.
+Breakfast on July 3rd at 8am in Manchester. 
 
 The goal - to find 4 services that at least 4 council leaders want and will need
-to replace this year.  
+to replace this year.  Services that are poorly, if at all, served by their current IT.
 
-Then get them to fund 1/4 of their budget into a G-Cloud
-based Open Development pilot project.  
+Then get them to fund 1/4 of their budget into a G-Cloud based Open Development
+pilot project.
 
 We (hopefully pretty soon I will be we) shall setup a committee of Open Source
 Worthies, who will take on project oversight, to guide and mentor projects to
 find their own ways within the best practises of Open Source development.
 
-And then arrange commercial cloud companies to host and support the projects.  
+And then arrange commercial cloud companies to host and support the projects.
 
 This way, real people in government will be able to help real users with Open
 Source tools that cost us the taxpayer only what they cost to build.
@@ -169,7 +169,8 @@ Please sign up at the top of the page.
 Updates
 -------
 
-I will post links here - and mail out to the list, so make sure you sign up :-)
+* 2013-5-30. Met the leader of Maidstone Council, `Chris Garland <http://meetings.maidstone.gov.uk/mgUserInfo.aspx?UID=135>`_ at a `local business networking event <https://www.facebook.com/LenhamValleyBusinessAssociation>`_ . I actually got him to sign up !  And I am pestering Alison Broom (CEO) too - I would love to get one council committed to a pilot project before the LGA !
+
 
 
 
