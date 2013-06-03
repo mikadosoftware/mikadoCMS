@@ -2,7 +2,7 @@ LGSL List
 =========
 
 The `LGSL list <http://www.esd.org.uk/esdtoolkit/News/NewsDetail.aspx?Item=233>`_  is compiled through the esd-toolkit and is reproduced below for interest.
-
+ 
 
 .. raw:: html
 
