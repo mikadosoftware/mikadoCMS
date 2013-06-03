@@ -14,7 +14,8 @@ def mvfile(srcpath, destdir):
     destpath = os.path.join(destdir, relative_path).replace(".rst", ".htm")
     print destpath
     pageob = lib.rst_to_page(srcpath)
-    open(destpath, "w").write(pageob.html_body)
+    open(destpath, "w").write(pageob.html_body.encode("utf8"))
+    
     
     
     
