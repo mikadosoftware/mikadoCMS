@@ -6,16 +6,29 @@ university, in Texas.
      :width: 250 px
      :height: 140 px
 
-     This one.
+     This one. In Sunshine. 4,000 miles away.
 
 Which is actually a great job, but that's not the point.  The point is I
-realised that people thousands of miles away were savvy enough to want Open
+realised that people thousands of miles away want Open
 Source Software built for them, but my local council *on the same road as my
-office* was not.
+office* was does not seem to.
 
 .. figure:: /assets/images/gibsondrive.jpg
 
        This road. The rainy one.
+
+It turns out that they *do* want to, but there are a series of `blockers </blockers>`_ that 
+make using Open Source Software in localgov harder.  
+
+So I started this campaign 
+
+.. highlights:: To make the model of Open Source development the *norm* for local government software.
+ 
+By `tilting the level playing field </assets/images/LGA_advert_2.pdf>`_ I want to see my tax money be spent on 
+software that can be read, reused and reworked freely for the benefit of all of us taxpayers.  
+
+Well, it seems a good idea.
+
 
 Do you know there is a list describing everything government is supposed to do?
 Its called the `Local Government Service Listing

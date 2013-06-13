@@ -12,25 +12,23 @@ def mvfile(srcpath, destdir):
     cutpoint = srcpath.find("/orig/")
     relative_path = srcpath[cutpoint + len("/orig/"):]
     destpath = os.path.join(destdir, relative_path).replace(".rst", ".htm")
-    print destpath
     pageob = lib.rst_to_page(srcpath)
     open(destpath, "w").write(pageob.html_body.encode("utf8"))
-    
+    return destpath    
     
     
     
 def walk_orig(rootpath):
     for root, dirs, files in os.walk(rootpath):
         for f in files:
-            if f.find(".rst") >0:
-                print f, " to ", 
-                mvfile(os.path.join(root, f), DESTDIR)
+            ##hacky equivalent to .rst$
+            if f.find(".rst") == len(f)-4:
+                print f, " -> ", 
+                destpath = mvfile(os.path.join(root, f), DESTDIR)
+                print destpath
             else:
                 pass
     
-        
-
-
 if __name__ == '__main__':
     configpath = sys.argv[1:][0]
     import conf
