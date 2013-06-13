@@ -11,24 +11,24 @@ university, in Texas.
 Which is actually a great job, but that's not the point.  The point is I
 realised that people thousands of miles away want Open
 Source Software built for them, but my local council *on the same road as my
-office* was does not seem to.
+office* does not seem to.
 
 .. figure:: /assets/images/gibsondrive.jpg
 
        This road. The rainy one.
 
-It turns out that they *do* want to, but there are a series of `blockers </blockers>`_ that 
-make using Open Source Software in localgov harder.  
+It turns out that they *do* want to, but there are a series of `blockers
+</blockers>`_ that make using Open Source Software in localgov harder.
 
 So I started this campaign 
 
 .. highlights:: To make the model of Open Source development the *norm* for local government software.
  
-By `tilting the level playing field </assets/images/LGA_advert_2.pdf>`_ I want to see my tax money be spent on 
-software that can be read, reused and reworked freely for the benefit of all of us taxpayers.  
+By `tilting the level playing field </assets/images/LGA_advert_2.pdf>`_ I want
+to see my tax money be spent on software that can be read, reused and reworked
+freely for the benefit of all of us taxpayers.
 
-Well, it seems a good idea.
-
+And, there is a real network effect, and it is a *global* effect.  The Australian government blessed an Australian CMS (Squiz) this year, and it has found its way into Kent local government.  The UK has had a long history of leading the world in software development, and it would be foolish to throw away a major global sector simply because we like our convoluted tendering processes.
 
 Do you know there is a list describing everything government is supposed to do?
 Its called the `Local Government Service Listing
@@ -179,12 +179,29 @@ As it *should* be.
 Please sign up at the top of the page.
 
 
+Three campaign stages
+---------------------
+
+* Pilot Projects 
+  Simply getting working MVPs out there.
+
+* Up to Speed
+  We can put developers and councils together in an organised and ongoing fashion
+
+* On-going delivery
+  Going from a handful to all 2,000 services as Open Source.
+
+
+
+
 Updates
 -------
 
 * 2013-5-30. Met the leader of Maidstone Council, `Chris Garland <http://meetings.maidstone.gov.uk/mgUserInfo.aspx?UID=135>`_ at a `local business networking event <https://www.facebook.com/LenhamValleyBusinessAssociation>`_ . I actually got him to sign up !  And I am pestering Alison Broom (CEO) too - I would love to get one council committed to a pilot project before the LGA !
 
+* Great interview with Kevin Curry of CodeForAmerica.
 
+* Going to start a case study on a multi-agency multi-council project here in Kent on delivering Abandoned Vehicles reporting system.  
 
 
      

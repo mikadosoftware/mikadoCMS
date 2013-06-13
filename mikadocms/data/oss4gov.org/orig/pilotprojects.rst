@@ -5,7 +5,9 @@ The immediate goal of the campaign is to move 4 ideas to actual pilot projects.
 These pilots will obviously be used to judge how effective the OSS in government
 approach is, as well as actually delivering value.
 
-A brief run-down of what a project will involve is below
+A brief run-down of what a project will involve is below, but this is evolving
+as the campaign learns more.
+
 
 
 Pure Play
