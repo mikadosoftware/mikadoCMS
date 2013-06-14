@@ -16,7 +16,18 @@ New projects are of course always welcome - just give me a call or drop me an em
     
 
     <tr>
-        <td><a href="TBC">tracScrumStuff</a>
+        <td><a href="http://mikadocms.mikadosoftware.com">mikadoCMS</a>
+        </td>
+        <td>technical marketing orientated CMS</td>
+        <td><a href="git@github.com:mikadosoftware/mikadoCMS.git">
+                   git@github.com:mikadosoftware/mikadoCMS.git</a></br>
+        2013-06-14 20:02:40 +0100</td>
+    </tr>
+
+    
+
+    <tr>
+        <td><a href="https://github.com/lifeisstillgood/tracScrumStuff">tracScrumStuff</a>
         </td>
         <td>old Proj mgmt and agile tools for `trac`. Dormant.</td>
         <td><a href="git@github.com:lifeisstillgood/tracScrumStuff.git">
@@ -27,7 +38,7 @@ New projects are of course always welcome - just give me a call or drop me an em
     
 
     <tr>
-        <td><a href="TBC">pyskype</a>
+        <td><a href="https://github.com/lifeisstillgood/pyskype">pyskype</a>
         </td>
         <td>automating skype on Linux</td>
         <td><a href="git@github.com:lifeisstillgood/pyskype.git">
@@ -38,7 +49,7 @@ New projects are of course always welcome - just give me a call or drop me an em
     
 
     <tr>
-        <td><a href="TBC">odietamo</a>
+        <td><a href="https://github.com/pmsoftware/odietamo">odietamo</a>
         </td>
         <td>source control for Oracle's ETL tool</td>
         <td><a href="git@github.com:pmsoftware/odietamo.git">
@@ -49,7 +60,7 @@ New projects are of course always welcome - just give me a call or drop me an em
     
 
     <tr>
-        <td><a href="TBC">moonbase</a>
+        <td><a href="https://github.com/lifeisstillgood/moonbase">moonbase</a>
         </td>
         <td>Old selenium based browser automation.  Likely dormant</td>
         <td><a href="git@github.com:lifeisstillgood/moonbase.git">
@@ -60,7 +71,7 @@ New projects are of course always welcome - just give me a call or drop me an em
     
 
     <tr>
-        <td><a href="TBC">mikadoCRM</a>
+        <td><a href="https://">mikadoCRM</a>
         </td>
         <td>CRM - based around google COntacts API</td>
         <td><a href="">
@@ -71,7 +82,7 @@ New projects are of course always welcome - just give me a call or drop me an em
     
 
     <tr>
-        <td><a href="TBC">koolaid</a>
+        <td><a href="https://github.com/lifeisstillgood/koolaid">koolaid</a>
         </td>
         <td>managing a git repo - tools and tricks</td>
         <td><a href="git@github.com:lifeisstillgood/koolaid.git">
@@ -82,7 +93,7 @@ New projects are of course always welcome - just give me a call or drop me an em
     
 
     <tr>
-        <td><a href="TBC">cyclo</a>
+        <td><a href="https://github.com/lifeisstillgood/cyclo">cyclo</a>
         </td>
         <td>Using python AST to measure program complexity</td>
         <td><a href="git@github.com:lifeisstillgood/cyclo.git">
@@ -104,7 +115,7 @@ New projects are of course always welcome - just give me a call or drop me an em
     
 
     <tr>
-        <td><a href="TBC">bookmaker</a>
+        <td><a href="https://github.com/mikadosoftware/bookmaker">bookmaker</a>
         </td>
         <td>Book orientated CMS.</td>
         <td><a href="git@github.com:mikadosoftware/bookmaker.git">
@@ -115,7 +126,7 @@ New projects are of course always welcome - just give me a call or drop me an em
     
 
     <tr>
-        <td><a href="TBC">OSBuilder</a>
+        <td><a href="https://github.com/lifeisstillgood/OSBuilder">OSBuilder</a>
         </td>
         <td>Build FreeBSD systems from scratch</td>
         <td><a href="git@github.com:lifeisstillgood/OSBuilder.git">
@@ -137,7 +148,7 @@ New projects are of course always welcome - just give me a call or drop me an em
     
 
     <tr>
-        <td><a href="TBC">bamboo.recipies</a>
+        <td><a href="https://github.com/Connexions/bamboo.recipies">bamboo.recipies</a>
         </td>
         <td>Store for bamboo recipies</td>
         <td><a href="git@github.com:Connexions/bamboo.recipies.git">
@@ -154,17 +165,6 @@ New projects are of course always welcome - just give me a call or drop me an em
         <td><a href="git@github.com:lifeisstillgood/ExecutableOpinions.git">
                    git@github.com:lifeisstillgood/ExecutableOpinions.git</a></br>
         2013-06-14 18:47:47 +0100</td>
-    </tr>
-
-    
-
-    <tr>
-        <td><a href="http://mikadocms.mikadosoftware.com">mikadoCMS</a>
-        </td>
-        <td>technical marketing orientated CMS</td>
-        <td><a href="git@github.com:mikadosoftware/mikadoCMS.git">
-                   git@github.com:mikadosoftware/mikadoCMS.git</a></br>
-        2013-06-14 00:58:50 +0100</td>
     </tr>
 
     
@@ -246,5 +246,6 @@ New projects are of course always welcome - just give me a call or drop me an em
 
     
     </table>
+
 
 
