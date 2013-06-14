@@ -1,8 +1,10 @@
 Projects
 ========
 
-There are a variety of projects, of greater or lesser interest
+Here is a list of the publically available, open source software 
+I have developed and/or worked on over the years.
 
+New projects are of course always welcome - just give me a call or drop me an email - my details are at the bottom.
 
 
 
