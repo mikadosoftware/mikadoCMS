@@ -95,7 +95,7 @@ def make_app(name, confd):
     app.add_url_rule("/assets/<path:filename>",
                      view_func=servestatic)#should use wsgi middleware or nginx
     app.add_url_rule("/<path:path>", view_func=cms)
-#    app.add_url_rule("/blog/<path:path>", view_func=blog)    
+    #app.add_url_rule("/blog/<path:path>", view_func=blog)    
     return app
 
 def servestatic(filename):
@@ -174,7 +174,7 @@ def cms(path):
 
   
 def blog(path):
-    return "helo" + str(path)
+    return cms(path)
 
 def parse_args():
     parser = OptionParser()
