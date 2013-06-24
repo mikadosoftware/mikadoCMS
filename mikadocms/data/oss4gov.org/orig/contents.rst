@@ -13,4 +13,5 @@ Contents
 * `Campaign goals and values </goalsandvalues>`_
 * `Blockers </blockers>`_
 * `Interview with Kevin Curry, Code For America <interview_kevincurry>`_
+* `Interview with Dave Partridge, Tonbridge & Malling Borough Council <interview_davepartridge>`_
 
