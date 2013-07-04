@@ -6,14 +6,30 @@
 from bookmaker import lib
 import os, sys
 
+def contents(pageobj):
+    """
+    """
+    fo = open("/tmp/contents.rst", "a")
+    #get page title
+    if pageobj.title == '':
+        title = os.path.splitext(os.path.basename(pageobj.src))[0]
+    else:
+        title = pageobj.title
+    uri = os.path.splitext(os.path.basename(pageobj.src))[0]
+    ##
+    fo.write("* `%s <%s>`_\n" % (title, uri))
+    fo.close()
+
+             
 def mvfile(srcpath, destdir):
     """
     """
     cutpoint = srcpath.find("/orig/")
     relative_path = srcpath[cutpoint + len("/orig/"):]
     destpath = os.path.join(destdir, relative_path).replace(".rst", ".htm")
-    pageob = lib.rst_to_page(srcpath)
-    open(destpath, "w").write(pageob.html_body.encode("utf8"))
+    pageobj = lib.rst_to_page(srcpath)
+    contents(pageobj)
+    open(destpath, "w").write(pageobj.html_body.encode("utf8"))
     return destpath    
     
     
