@@ -16,3 +16,4 @@ Contents
 * `Interview with Dave Partridge, Tonbridge & Malling Borough Council <interview_davepartridge>`_
 * `Breakfast Meeting - LGA conference July 3rd  </LGABreakfast>`_
 * `An UnApology <unapology>`_
+* `A Manifesto <manifesto>`_
