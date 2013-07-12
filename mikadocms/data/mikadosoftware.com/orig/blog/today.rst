@@ -1,5 +1,0 @@
-today
------
-
-
-Gosh whata day
