@@ -1,0 +1,35 @@
+======
+Monday
+======
+
+Still trying to get bamboo working again - lots of config collisions and changes.  I am restructuring the config file - ::
+
+    [stage]
+    xxx=yyy
+    [build]
+    zzz=ttt
+
+Essentially I will have a config section for ech stage of the stage->deploy process and then an app specific section (passwords etc)
+
+Config has been the bane of my life for some time now.  But the aim is still clear - to have the same process whether I am running locally on a devs machine or pushing live.  Same code, same command line same config file. 
+
+Only that way does sanity lie.
+
+
+I am also getting this `rst2blogger <http://rst2blogger.readthedocs.org>`_
+ to work - this is cool - first post and its with rst !
+
+How to use it ::
+
+   1. pip install rst2blogger
+   2. register yourself as an OAuth capable API with google
+      (https://code.google.com/apis/console)
+   3. Feed the consumer Key and the secret into rst2blogger - it now looks
+      like you are a website asking for permission to use my values.
+   4. Ensure that if you have >1 blogger blog, you use the name of the target
+
+so for me I run::
+
+    rst2blogger --blog "Fatherhood, programming and business" 2013-02-25-Mon.rst 
+
+Then it is in draft format and I just need to tweak and publish.
