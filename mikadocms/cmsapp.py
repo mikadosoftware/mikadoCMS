@@ -119,14 +119,12 @@ def getchunks(chunkdir):
     for f in files:
         key = f.split(".")[0] #foo.tmpl -> foo
         fpath = os.path.join(chunkdir, f)  #foo.tmpl -> /tmp/foo.tmpl
-        allchunks[key] = open(fpath).read()
+        allchunks[key] = open(fpath).read().decode('utf-8')
     ##header needs the title and meta details of a page formatted in
     return allchunks
     
-    
 def index():
-    t = get_tmpl(tmpltype="index")
-    return t % allchunks
+    return cms("/")
 
 
     
@@ -186,25 +184,39 @@ def page_into_dict(pageob):
 
 def cms(path):
 
-    lgr.info("Entered CMS with path %s" % path) 
-    path_requested = os.path.join(app.config['cms']['rstroot'], path) + ".rst"
+    lgr.info("Entered CMS with path %s" % path)
     
-    if path.strip()[-1:] == "/":
+    if path.strip() == '/':
+        t = get_tmpl(tmpltype="index")
+        path_requested = os.path.join(confd['cms']['rstroot'], "index.rst")
+        lgr.info("looking for %s after %s" % (path_requested,
+                                              confd['cms']['rstroot']))
+    elif path.strip()[-1:] == "/":
+        t = get_tmpl(tmpltype="internal")
         #horrible hack - if path ends in / then get the index of the dir...
-        path_requested = path_requested.replace("/.rst", "/index.rst")
+        path_requested = os.path.join(confd['cms']['rstroot'],
+                                      path,
+                                      "/index.rst")
+        lgr.info("looking for %s after %s" % (path_requested,
+                                              confd['cms']['rstroot']))
+    else:
+        t = get_tmpl(tmpltype="internal")
+        path_requested = os.path.join(confd['cms']['rstroot'],
+                                      path + ".rst")
+        lgr.info("looking for %s after %s" % (path_requested,
+                                              confd['cms']['rstroot']))
         
     if not os.path.isfile(path_requested):
         lgr.error("aborting %s" % path_requested)
         abort(404)
         
-    t = get_tmpl(tmpltype="internal")
-    
     ##chunks
     allchunks = getchunks(confd['cms']['chunkdir'])
 
  
     pg = get_pageobj(path_requested)
     allchunks.update(page_into_dict(pg))
+    lgr.info(allchunks.keys())
     ## OK - now the page info is in allchunks, we can write the page
     ## info into the title field in header.
     allchunks['header'] = allchunks['header'] % allchunks
