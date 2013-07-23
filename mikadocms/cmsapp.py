@@ -7,7 +7,7 @@ from waitress import serve
 import conf
 from optparse import OptionParser
 import logging
-logging.basicConfig(level=logging.DEBUG)
+from bookmaker import lib
 
 '''
 This is supposed to be the heart of CMS
@@ -73,6 +73,9 @@ or copy compress.rb idea
 http://www.sitepoint.com/css-frameworks-semantic-class-names/
 
 
+
+allchunks is magically in global...
+I dont like this - it needs to be in wsgi flow.
 '''
 
 
@@ -95,13 +98,12 @@ def make_app(name, confd):
     app.add_url_rule("/assets/<path:filename>",
                      view_func=servestatic)#should use wsgi middleware or nginx
     app.add_url_rule("/<path:path>", view_func=cms)
-    #app.add_url_rule("/blog/<path:path>", view_func=blog)    
     return app
 
 def servestatic(filename):
     """
     """
-    print "serving ", filename
+    lgr.info("serving %s" % filename)
     return send_from_directory(confd['cms']['static_path'],
                                        filename)
 
@@ -118,6 +120,7 @@ def getchunks(chunkdir):
         key = f.split(".")[0] #foo.tmpl -> foo
         fpath = os.path.join(chunkdir, f)  #foo.tmpl -> /tmp/foo.tmpl
         allchunks[key] = open(fpath).read()
+    ##header needs the title and meta details of a page formatted in
     return allchunks
     
     
@@ -146,35 +149,58 @@ def get_tmpl(tmpltype="internal"):
     return open(os.path.join(app.config['cms']['tmplroot'], tmpl)).read()
 
     
-def get_pagetxt(path_requested):
-    """ """
-    txt = open(path_requested).read()
-    return txt
+def get_pageobj(srcpath):
+    """
+    from a rest file generate a bookmaker pageobj
+    """
+
+    lgr.info("Converting %s" % srcpath)
+    pageobj = lib.rst_to_page(srcpath)
+    return pageobj
 
     
-
+def page_into_dict(pageob, allchunks):
+    """
+    given a `bookmaker` pageobject, add the safe values into the allchunks dict
+    in a better way than dict.update
+    
+    """
+    ## suddenly I know too much about internals of pageobject...
+    ## this should be in the page obj class - FIXME
+    lgr.info(pprint.pformat(pageob.__dict__.keys()))
+    safelist = [ 'body', 'body_pre_docinfo', 'body_prefix', 'body_suffix', 'breadcrumbs', 'dest_url',
+                 'docinfo', 'encoding', 'footer', 'fragment', 'get_dest_to_write_to', 'head',
+                 'head_prefix', 'header', 'html_body', 'html_head', 'html_prolog', 'html_subtitle',
+                 'html_title', 'meta', 'ondisk_dest', 'src', 'src_dir', 'src_filename', 'stylesheet',
+                 'subtitle', 'teaser', 'title', 'version', 'whole']
+    for k in safelist:
+        newk = "page_" + k
+        try:
+            allchunks[newk] = pageob.__dict__[k]
+        except:
+            continue
+    return allchunks
+    
+    
 
 def cms(path):
+
+    path_requested = os.path.join(app.config['cms']['rstroot'], path) + ".rst"
     
-    path_requested = os.path.join(app.config['cms']['docroot'], path) + ".htm"
-    if path_requested.find("/.htm") != -1:
-        #horrible hack
-        path_requested = path_requested.replace("/.htm", "/index.htm")
+    if path.strip()[-1:] == "/":
+        #horrible hack - if path ends in / then get the index of the dir...
+        path_requested = path_requested.replace("/.rst", "/index.rst")
         
     if not os.path.isfile(path_requested):
-        print "aborting", path_requested
+        lgr.error("aborting %s" % path_requested)
         abort(404)
         
     t = get_tmpl(tmpltype="internal")
-    body = get_pagetxt(path_requested)
-    allchunks.update( {"itemcontent": body})
-    print allchunks.keys()
-    print allchunks['header']
+    pg = get_pageobj(path_requested)
+    page_into_dict(pg, allchunks)
+    allchunks['header'] = allchunks['header'] % allchunks ##
     return t % allchunks
 
-  
-def blog(path):
-    return cms(path)
 
 def parse_args():
     parser = OptionParser()
@@ -188,6 +214,7 @@ if __name__ == "__main__":
 
     lgr = logging.getLogger("mikadoCMS")
     logging.basicConfig(level=logging.DEBUG)
+    lib.inject_config({}) ## dummy to handle deficiences in bookmkaer
     
     opts, args = parse_args()
     confd = conf.get_config(opts.confpath)

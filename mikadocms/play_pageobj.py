@@ -5,15 +5,21 @@ import logging
 import os
 import pprint
 
+
+"""
+usage: python -i play_pageobj.py --tgtpath=data/mikadosoftware.com/orig/services/index.rst
+
+"""
+
 class myError(Exception):
     pass
     
 #########
 
-def main(confd):
+def main(tgtpath):
     """
     """
-    srcpath = os.path.join(confd['cms']['rstroot'], "orig", "about.rst")
+    srcpath = tgtpath
     pageob = lib.rst_to_page(srcpath)
     return pageob
 
@@ -21,8 +27,8 @@ def main(confd):
 
 def parse_args():
     parser = OptionParser()
-    parser.add_option("--config", dest="confpath",
-                      help="path to ini file")
+    parser.add_option("--tgtpath", dest="tgtpath",
+                      help="path to a rest file")
     (options, args) = parser.parse_args()
     return (options, args)
     
@@ -32,10 +38,8 @@ if __name__ == '__main__':
     lgr = logging.getLogger(__name__)
     
     opts, args = parse_args()
-    confd = conf.get_config(opts.confpath)
-    lgr.debug(pprint.pformat(confd))
     try:
-        pageob = main(confd)
+        pageob = main(opts.tgtpath)
     except Exception, e:
         print "We can trap a lot up here"
         raise e
