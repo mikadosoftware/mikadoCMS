@@ -159,12 +159,13 @@ def get_pageobj(srcpath):
     return pageobj
 
     
-def page_into_dict(pageob, allchunks):
+def page_into_dict(pageob):
     """
     given a `bookmaker` pageobject, add the safe values into the allchunks dict
     in a better way than dict.update
     
     """
+    tmp = {}
     ## suddenly I know too much about internals of pageobject...
     ## this should be in the page obj class - FIXME
     lgr.info(pprint.pformat(pageob.__dict__.keys()))
@@ -176,15 +177,16 @@ def page_into_dict(pageob, allchunks):
     for k in safelist:
         newk = "page_" + k
         try:
-            allchunks[newk] = pageob.__dict__[k]
+            tmp[newk] = pageob.__dict__[k]
         except:
             continue
-    return allchunks
+    return tmp
     
     
 
 def cms(path):
 
+    lgr.info("Entered CMS with path %s" % path) 
     path_requested = os.path.join(app.config['cms']['rstroot'], path) + ".rst"
     
     if path.strip()[-1:] == "/":
@@ -196,9 +198,16 @@ def cms(path):
         abort(404)
         
     t = get_tmpl(tmpltype="internal")
+    
+    ##chunks
+    allchunks = getchunks(confd['cms']['chunkdir'])
+
+ 
     pg = get_pageobj(path_requested)
-    page_into_dict(pg, allchunks)
-    allchunks['header'] = allchunks['header'] % allchunks ##
+    allchunks.update(page_into_dict(pg))
+    ## OK - now the page info is in allchunks, we can write the page
+    ## info into the title field in header.
+    allchunks['header'] = allchunks['header'] % allchunks
     return t % allchunks
 
 
@@ -212,18 +221,17 @@ def parse_args():
 
 if __name__ == "__main__":
 
+
+    ## only confd is allowed to be global to the module,
+    ## everything else gets passed around.
+    
     lgr = logging.getLogger("mikadoCMS")
     logging.basicConfig(level=logging.DEBUG)
     lib.inject_config({}) ## dummy to handle deficiences in bookmkaer
     
     opts, args = parse_args()
     confd = conf.get_config(opts.confpath)
-    lgr.debug(pprint.pformat(confd))
 
-    ##chunks
-    allchunks = getchunks(confd['cms']['chunkdir'])
-    lgr.info(allchunks.keys())
-    
     app = make_app("mikadocms", confd)
     serve(app.wsgi_app,host="0.0.0.0",port=int(confd['cms']['port']))            
     
