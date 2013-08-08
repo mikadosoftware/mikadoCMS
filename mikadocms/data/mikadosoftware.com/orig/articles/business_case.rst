@@ -2,6 +2,8 @@
 Making a Business Case
 ======================
 
+(February 2009)
+
 Why most businesses get it wrong
 ================================
 There was no justification for investing in Columbus' first voyage to the New World.  Honestly, it was a terrible idea.  Which is why it took the best part of forever for him to get funded.  In a previous life, I used to recommend prospective projects on their business case - and I would never have funded the Columbus project.  I am wondering what this implies, mostly about me.

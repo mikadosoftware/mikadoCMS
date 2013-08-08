@@ -2,6 +2,10 @@
 What I cannot create I do not understand
 ========================================
 
+
+
+.. figure:: http://static.duartes.org/img/blogPosts/feynmanLastBoard.gif
+
 When Richard Feynman died in 1988, his chalkboard at CalTech contained
 several notes, including the one that has struck such a cord with me
 
@@ -78,46 +82,26 @@ games and more.  This does not stop us from writing another, just as
 the existence of a Haynes car manual does not stop people from taking their
 car engine apart.  We do it because we do not understand, and we want to learn.
 
-Sometimes, there is an itch to scratch.  But often the itch is for knowledge, and the desire to know if we *can*.  Benefiting the rest of the world is what we do to share our knowledge.  
+Sometimes, there is an itch to scratch.  But often the itch is for knowledge,
+and the desire to know if we *can*.  Benefiting the rest of the world is what we
+do to share our knowledge.
 
 
-NASA and Feynman
-----------------
-The Challenger Space shuttle disaster was a terrible blow to American Engineering, (and obviously to seven poor astronauts).  But the subsequent investigation had Prof. Feynman on its board.  He eventually disagreed with the chairman and was llowed to write an appendix to the main report.  
+Evolution
+---------
 
+Because we have to re-invent the wheel to teach the next generation, 
+we tend to incrementally improve.  And that is a slow evolutionary process.
 
-That appendix is brilliant for many reasons, a few I hope to do justice to
+Software *evolves* to fit its niche.
 
-* not that well written. Compare Pinker, 
-* can see the political naif.  The attemtps to marshall evidence that is not going to tip status quo, the tilting at windmills for the greater good
-* it makes its points - 
-* softwre is evolved
-* explains how eingerring should be done
-* shows how politics can get in way
-* survivor bias
+Relax
+-----
 
+I am sometimes troubled by comparing myself to some of life's winners.  But looking at Feynman makes those 
+comparisons silly.  A genius that other genius' thought a genius, he still tried to understand this strange world
+we live in, and had no more a grasp on *why* than the rest of us poor schmucks.
 
+So, we do what we can.  And move the world on a little bit.  Some more than others, I must admit, but I am happy to
+be pushing it in the right direction.
 
-
-Now the actual appendix is brilliant, and contains serious insights into
-engineering cultures, the good and the bad.
-
-::
-
- The proper way to save money is to curtail the number of requested changes, not the quality of testing for each.
-
-Overall, the appendix is not a 'good read'.  Reading people like Pinker this does not have the 
-sustained cumulative flow - its probably not a good essay by undergraduate standards.
-
-However that is even more proof of its greatness - sometimes one writes a note to the 
-company, to people to make an impression - trying to justify why we should not
-do such a foolish thing.  One always tries to make them a 'good essay'.
-
-Here one of the most brilliant minds in a century, in a massively high profile case
-does not write for effect.  He just writes his opinion.  ITs both disappointing and
-reliveing - I can just write and move on.
-
-Transparency
-------------
-
-img: http://static.duartes.org/img/blogPosts/feynmanLastBoard.gif
