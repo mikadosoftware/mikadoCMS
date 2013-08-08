@@ -176,7 +176,7 @@ def cms(path):
     
     """
     lgr.info("Entered CMS with path %s" % path)
-    
+    lgr.info("request log: %s" % request.environ)    
     if path.strip() == '/':
         t = get_tmpl(tmpltype="index")
         path_requested = os.path.join(confd['cms']['rstroot'], "index.rst")

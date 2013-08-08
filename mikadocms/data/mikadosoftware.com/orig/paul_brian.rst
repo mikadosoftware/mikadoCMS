@@ -6,11 +6,15 @@ I am trying to create one.
 
 Some links for you:
 
-https://plus.google.com/112129169475850438013/about
+.. raw:: html
 
-http://www.oss4gov.org
-http://www.odietamo.org.uk
-http://www.mikadosoftware.com
+   <a rel="me" href="https://plus.google.com/112129169475850438013/about" />G+</a>
 
-https://news.ycombinator.com/threads?id=lifeisstillgood
-https://twitter.com/lifeisstillgood
+
+Apparently that gets me my picture in a search result.
+
+* http://www.oss4gov.org
+* http://www.odietamo.org.uk
+* http://www.mikadosoftware.com
+* https://news.ycombinator.com/threads?id=lifeisstillgood
+* https://twitter.com/lifeisstillgood
