@@ -195,9 +195,9 @@ def cms(path):
         t = get_tmpl(tmpltype="internal")
         #horrible hack - if path ends in / then get the index of the dir...
         path_requested = os.path.join(confd['cms']['rstroot'],
-                                      path,
-                                      "/index.rst")
-        lgr.info("looking for %s after %s" % (path_requested,
+                                      path, "index.rst")
+        lgr.info("Ended in slash looking for %s after %s" % (
+                                              path_requested,
                                               confd['cms']['rstroot']))
     else:
         t = get_tmpl(tmpltype="internal")
