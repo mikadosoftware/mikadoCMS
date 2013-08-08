@@ -5,9 +5,10 @@
 
 from bookmaker import lib
 import os, sys
+import logging
+lgr = logging.getLogger("mikadoCMS")
 
-
-def contents(pageobj):
+def contententry(pageobj):
     """
     """
     cutpoint = pageobj.src.find("/orig/")
@@ -28,45 +29,27 @@ def contents(pageobj):
 
 
     ##
-    fo = open(CONTENTSPATH, "a")
-    fo.write("* `%s <%s>`_\n" % (title, relative_uri))
-    fo.close()
-
+    return "* `%s <%s>`_\n" % (title, relative_uri)
+    
              
-def mvfile(srcpath, destdir):
-    """
-    """
-    cutpoint = srcpath.find("/orig/")
-    relative_path = srcpath[cutpoint + len("/orig/"):]
-    destpath = os.path.join(destdir, relative_path).replace(".rst", ".htm")
-    pageobj = lib.rst_to_page(srcpath)
-    contents(pageobj)
-    open(destpath, "w").write(pageobj.html_body.encode("utf8"))
-    return destpath    
-    
-    
-    
-def walk_orig(rootpath):
+def gather_contents_as_rst(rootpath):
+    contents = []
     for root, dirs, files in os.walk(rootpath):
         for f in files:
             ##hacky equivalent to .rst$
             if f.find(".rst") == len(f)-4:
-                print f, " -> "
-                destpath = mvfile(os.path.join(root, f), DESTDIR)
-                print "   ", destpath
+                if f == "index.rst":continue
+                srcpath = os.path.join(root, f)
+                lgr.debug("valid file: %s at srcpath %s" % (f,srcpath))
+                pageobj = lib.file_to_page(srcpath)
+                contents.append(contententry(pageobj))
             else:
-                pass
+                lgr.debug("invalid file %s" % f)
+    return "\n".join(contents)
     
 if __name__ == '__main__':
 
     ## create package of constants to pass around.
-    configpath = sys.argv[1:][0]
-    import conf
-    confd = conf.get_config(configpath)
-
-    CONTENTSPATH = os.path.join(confd['cms']['rstroot'], "contents.rst")
-    DESTDIR = confd['cms']['docroot']
-    open(CONTENTSPATH,"w") #delete/
-    lib.inject_config({}) ## dummy to handle deficiences in bookmkaer
-    walk_orig(confd['cms']['rstroot'])
-    mvfile(CONTENTSPATH, DESTDIR)
+    origpath = sys.argv[1:][0]
+    print walk_orig(origpath)
+    

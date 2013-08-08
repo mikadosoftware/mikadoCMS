@@ -78,8 +78,10 @@ allchunks is magically in global...
 I dont like this - it needs to be in wsgi flow.
 '''
 
+import contents_maker
 
-
+class CMSError(Exception):
+    pass
 
 def make_app(name, confd):
     """
@@ -147,43 +149,32 @@ def get_tmpl(tmpltype="internal"):
     return open(os.path.join(app.config['cms']['tmplroot'], tmpl)).read()
 
     
-def get_pageobj(srcpath):
+def get_page_from_rst(srcText):
     """
     from a rest file generate a bookmaker pageobj
     """
-
-    lgr.info("Converting %s" % srcpath)
-    pageobj = lib.rst_to_page(srcpath)
+    lgr.debug("Converting a text string %s" % srcText[:10])
+    pageobj = lib.rst_to_page(srcText)
     return pageobj
-
     
-def page_into_dict(pageob):
+def read_srcfile(path_requested):
     """
-    given a `bookmaker` pageobject, add the safe values into the allchunks dict
-    in a better way than dict.update
-    
     """
-    tmp = {}
-    ## suddenly I know too much about internals of pageobject...
-    ## this should be in the page obj class - FIXME
-    lgr.info(pprint.pformat(pageob.__dict__.keys()))
-    safelist = [ 'body', 'body_pre_docinfo', 'body_prefix', 'body_suffix', 'breadcrumbs', 'dest_url',
-                 'docinfo', 'encoding', 'footer', 'fragment', 'get_dest_to_write_to', 'head',
-                 'head_prefix', 'header', 'html_body', 'html_head', 'html_prolog', 'html_subtitle',
-                 'html_title', 'meta', 'ondisk_dest', 'src', 'src_dir', 'src_filename', 'stylesheet',
-                 'subtitle', 'teaser', 'title', 'version', 'whole']
-    for k in safelist:
-        newk = "page_" + k
-        try:
-            tmp[newk] = pageob.__dict__[k]
-        except:
-            continue
-    return tmp
-    
-    
+    if not os.path.isfile(path_requested):
+        lgr.error("aborting %s" % path_requested)
+        abort(404)
+    else:
+        rst_txt = unicode(open(path_requested).read(),'utf8')
+        ### lib deamnds all text as unicode
+    return rst_txt
 
 def cms(path):
+    """
+    This is essentially a URL route dispatcher, that is not designed like one...
 
+    I am special casing a lot of things...
+    
+    """
     lgr.info("Entered CMS with path %s" % path)
     
     if path.strip() == '/':
@@ -191,7 +182,16 @@ def cms(path):
         path_requested = os.path.join(confd['cms']['rstroot'], "index.rst")
         lgr.info("looking for %s after %s" % (path_requested,
                                               confd['cms']['rstroot']))
+        rst_txt = read_srcfile(path_requested)
+        
+    elif path.strip() == 'contents':
+        ###
+        lgr.debug("Called for /contents")
+        t = get_tmpl(tmpltype="internal")
+        rst_txt = contents_maker.gather_contents_as_rst(confd['cms']['rstroot'])
+        
     elif path.strip()[-1:] == "/":
+        ##directory
         t = get_tmpl(tmpltype="internal")
         #horrible hack - if path ends in / then get the index of the dir...
         path_requested = os.path.join(confd['cms']['rstroot'],
@@ -199,27 +199,29 @@ def cms(path):
         lgr.info("Ended in slash looking for %s after %s" % (
                                               path_requested,
                                               confd['cms']['rstroot']))
+        rst_txt = read_srcfile(path_requested)
     else:
         t = get_tmpl(tmpltype="internal")
         path_requested = os.path.join(confd['cms']['rstroot'],
                                       path + ".rst")
         lgr.info("looking for %s after %s" % (path_requested,
                                               confd['cms']['rstroot']))
+        rst_txt = read_srcfile(path_requested)
         
-    if not os.path.isfile(path_requested):
-        lgr.error("aborting %s" % path_requested)
-        abort(404)
         
     ##chunks
     allchunks = getchunks(confd['cms']['chunkdir'])
-
- 
-    pg = get_pageobj(path_requested)
-    allchunks.update(page_into_dict(pg))
-    lgr.info(allchunks.keys())
+    ### at this point we know if its an internal page,
+    ### we know the path_requested, we know the various chunks that
+    ### will make the final page
+        
+    pg = get_page_from_rst(rst_txt)
     ## OK - now the page info is in allchunks, we can write the page
     ## info into the title field in header.
-    allchunks['header'] = allchunks['header'] % allchunks
+    ## I should avoid the obj->dict issue by using jinja2
+    allchunks['header'] = allchunks['header'] % {"page_title": pg.title,
+                                                 "page_subtitle": pg.subtitle}
+    allchunks["page_html_body"] = pg.html_body
     return t % allchunks
 
 
