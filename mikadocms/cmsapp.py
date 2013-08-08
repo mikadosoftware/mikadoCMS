@@ -238,7 +238,7 @@ if __name__ == "__main__":
     ## everything else gets passed around.
     
     lgr = logging.getLogger("mikadoCMS")
-    logging.basicConfig(level=logging.DEBUG)
+    logging.basicConfig(level=logging.DEBUG, file="./mikado.log")
     lib.inject_config({}) ## dummy to handle deficiences in bookmkaer
     
     opts, args = parse_args()
