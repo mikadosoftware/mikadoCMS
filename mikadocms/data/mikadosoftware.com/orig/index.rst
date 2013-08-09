@@ -1,6 +1,8 @@
 
-All I wanted, was to do great work and still have breakfast with my children.
------------------------------------------------------------------------------
+To write great software and still spend time with my family 
+-----------------------------------------------------------
+
+All I wanted, was to do great work, and still be able to have breakfast with my children.
 
 Two years ago I was driving 100 miles a day around London's M25, living the
 typical consultant life.  It was however no way to raise a family and a dumb way
