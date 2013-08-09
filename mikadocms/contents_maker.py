@@ -40,6 +40,7 @@ def gather_contents_as_rst(rootpath):
             if f.find(".rst") == len(f)-4:
                 if f == "index.rst":continue
                 srcpath = os.path.join(root, f)
+                if not os.path.isfile(srcpath): continue ### emacs cruft often fails here. 
                 lgr.debug("valid file: %s at srcpath %s" % (f,srcpath))
                 pageobj = lib.file_to_page(srcpath)
                 contents.append(contententry(pageobj))

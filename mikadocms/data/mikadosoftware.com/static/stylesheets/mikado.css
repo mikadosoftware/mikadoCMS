@@ -11,3 +11,20 @@ body {
 .brand {
       padding: 5px 10px !important;
 }
+
+.title {
+      padding: 1em;
+}
+
+.figure {
+    float: right;
+    border: 1px solid gray;
+    margin: 2px;
+    padding: 2px;
+}
+
+.figure img {
+    height: 200px;
+    width: auto;
+
+}
