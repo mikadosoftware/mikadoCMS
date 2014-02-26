@@ -1,10 +1,22 @@
 About Paul Brian
 ================
 
-Mikado Software is my forever company - since I cannot find a job I like 
-I am trying to create one.
+Mikado Software is my forever company - I shall make it a decent place 
+to work, create and produce.
 
-Some links for you:
+If you are interested in hiring me you might want my CV:
+  
+* `Current CV (.docx) <http://www.mikadosoftware.com/assets/images/CV_current_pbrian.docx>`_
+* `Current CV (.pdf) <http://www.mikadosoftware.com/assets/images/CV_current_pbrian.pdf>`_
+
+  
+You might be interested in my Open Source projects:
+
+* http://osrc.dfm.io/lifeisstillgood
+* https://github.com/mikadosoftware
+
+
+This is part of the Google Authorship dance we now all need to make
 
 .. raw:: html
 
@@ -12,6 +24,8 @@ Some links for you:
 
 
 Apparently that gets me my picture in a search result.
+
+And the rest of my online lives can be found here :
 
 * http://www.oss4gov.org
 * http://www.odietamo.org.uk
