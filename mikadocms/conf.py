@@ -32,7 +32,7 @@ configuration variables available in the "environment"
 it would look like ::
 
   {
-   'bamboo': 
+   'bamboo':
        {'www_host_name':"www.cnx.org",},
    'rhaptos2repo':
        {'flag': "RedWhiteBlue"}
@@ -79,10 +79,10 @@ def get_config(ini_file_path=None):
     if not os.path.isfile(ini_file_path):
         raise MikadoCMSError("%s is not found" % ini_file_path)
     d = read_ini(ini_file_path)
-    confd.update(d)    
-    return confd    
+    confd.update(d)
+    return confd
     #no trapping of underlying error.
-    
+
 
 def read_ini(filepath):
 
@@ -98,11 +98,10 @@ def read_ini(filepath):
     for sect in parser.sections():
         d[sect] = dict(parser.items(sect))
     return d
-    
+
 
 
 
 if __name__ == '__main__':
     import doctest
     doctest.testmod(verbose=False)
-
