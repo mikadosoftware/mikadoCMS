@@ -213,3 +213,5 @@ is held about us and more laws to require it. and In the end we, globally, need
 to decide what the future should look like.  The Clean Air Act of the 1950's
 helped London escape the thrall of the Victorian smog - but it took nearly two
 hundred years. We cannot wait that long to control our digital pollution.
+
+(I am writing a book about this stuff.  Pop me your email above and I will keep you updated.)
