@@ -23,7 +23,7 @@ This is part of the Google Authorship dance we now all need to make
    <a rel="me" href="https://plus.google.com/112129169475850438013/about" />G+</a>
 
 
-Apparently that gets me my picture in a search result.
+Apparently that gets me my picture in a search result.  Seems to be another thing Google beta'd and then threw away...
 
 And the rest of my online lives can be found here :
 
