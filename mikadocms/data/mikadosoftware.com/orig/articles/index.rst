@@ -19,8 +19,7 @@ about the future, and being serious about simple software.
 * `The Big Break <the_break>`_
 * `slow code movement <slowcodemovement>`_
 * `basic SEO for Independent Workers <basic_seo>`_
-
-
+* `Difference between software houses and recruitment firms  <alwaysgoodships>`_
 
 
 Interviews
