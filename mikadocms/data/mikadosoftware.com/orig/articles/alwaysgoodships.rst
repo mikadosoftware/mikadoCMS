@@ -1,7 +1,7 @@
 Always Good Ships
 -----------------
 
-One of my bugbears about the otherwise excellent GDS inspired DOS framework (it's where all new software that government needs written (which should be open source) is put to tender), one of my bugbears is that it's acting more like a recruitment firm list than a list of software developers and vendors.
+One of my bugbears about the otherwise excellent GDS inspired `DOS framework <https://digitalmarketplace.blog.gov.uk/2015/10/27/digital-outcomes-and-specialists-an-overview/> `_ (it's where all new software that government needs written (which should be open source) is put to tender), one of my bugbears is that it's acting more like a recruitment firm list than a list of software developers and vendors.
 
 You see I think there is a real qualitative and quantitative difference between "I will go get 5 people from the contract market and just push them into the client site" and "I will take responsibility for those five people working well together, and delivering what is promised with quality"
 
