@@ -87,8 +87,7 @@ be done better faster digitally.  And why should that be proprietary?
 Polling booths is sky high amoungst international banks and hedge
 funds).
 
-I rant on about this in the 'OSS4Gov
-manifesto. <http://www.oss4gov.org/manifesto>'_
+I rant on about this in the `OSS4Gov manifesto. <http://www.oss4gov.org/manifesto>`_
 
 So as I said, I started a campaign website, headed off to LGSA and
 glad-handed anyone who would listen, paid for a big breakfast bash
