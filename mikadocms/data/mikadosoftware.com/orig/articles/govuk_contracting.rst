@@ -89,28 +89,27 @@ funds).
 
 I rant on about this in the `OSS4Gov manifesto. <http://www.oss4gov.org/manifesto>`_
 
-So as I said, I started a campaign website, headed off to LGSA and
-glad-handed anyone who would listen, paid for a big breakfast bash
-(visitors - none) and ... Nothing happened.
+So as I said, I started a campaign website, headed off to LGA
+Conference and glad-handed anyone who would listen, paid for a big
+breakfast bash (visitors - none) and ... Nothing happened.
 
 Was I dejected? Was I down heartend? Yes actually.  And well out of
 pocket for sponsoring lame breakfasts.
 
-But the dream is stil there.
+But the dream is still there.
 
 It's because in the digital age, when you are doing socially
-beneficial work, why in hells name should you have to fight crappy
+beneficial work, why in hell's name should you have to fight crappy
 software to get the job done.  Shouldn't you get the best software
 globally possible to do your job, and shouldn't I as a taxpayer get
 the best deal possible?  And more than that, it matters in another
 way.
 
-
 In the (excellent, go read it) book "Red Platoon", Medal of Honor
 winner Clinton Romesha describes fighting off a massive Taliban attack
 on his camp in Afghanistan.  The USAF squadron who supported him had a
 sign above the mess door -"The mission is a 19 year old with a
-rifle. Everything else is support."
+rifle.  Everything else is support."
 
 Whilst not taking away anything from that sentiment, I want to steal
 it to underline why I think OSS in government actually matters - ::
@@ -128,7 +127,7 @@ needed is good devs in each country to manage the localisation and
 
 So, how hard can it be to get one of these open source contracts.  I
 mean I am a professional so *doing the work* is not a problem.  How
-hard can finding the work be?
+hard can someone letting me do the work be?
 
 Turns out pretty darn difficult.  Despite the GDS wanting people like
 me, and me wanting to do the work, its still a challenge.
