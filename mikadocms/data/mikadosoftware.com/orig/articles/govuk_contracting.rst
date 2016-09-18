@@ -78,7 +78,7 @@ always work right, often badly done, underfunded and over-subscribed
 but in the end most public servants take pride in doing the right
 thing and going in the right direction.
 
-If you look at `LDSL list <http://oss4gov.org/lgsl>`_, you can see
+If you look at `LGSL list <http://oss4gov.org/lgsl>`_, you can see
 over 2000 statutory services - the vast majority of which either have
 to be digital, or are going to benefit greatly from going digital.
 Services that government *must* legally supply, and services that can
