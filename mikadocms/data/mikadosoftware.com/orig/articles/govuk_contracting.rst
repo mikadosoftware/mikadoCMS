@@ -78,13 +78,14 @@ always work right, often badly done, underfunded and over-subscribed
 but in the end most public servants take pride in doing the right
 thing and going in the right direction.
 
-If you look at LDSL list, you can see over 2000 statutory services -
-the vast majority of which either have to be digital, or are going to
-benefit greatly from going digital.  Services that government *must*
-legally supply, and services that can be done better faster digitally.
-And why should that be proprietary? (the demand for software to help
-Returning Officers to organise Polling booths is sky high amoungst
-international banks and hedge funds).
+If you look at `LDSL list <http://oss4gov.org/lgsl>`_, you can see
+over 2000 statutory services - the vast majority of which either have
+to be digital, or are going to benefit greatly from going digital.
+Services that government *must* legally supply, and services that can
+be done better faster digitally.  And why should that be proprietary?
+(the demand for software to help Returning Officers to organise
+Polling booths is sky high amoungst international banks and hedge
+funds).
 
 I rant on about this in the 'OSS4Gov
 manifesto. <http://www.oss4gov.org/manifesto>'_
