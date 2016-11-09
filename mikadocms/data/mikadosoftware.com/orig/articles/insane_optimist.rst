@@ -31,3 +31,5 @@ And my last reason for being optimistic is a simple one. While the election ate 
 The Donald's personal traits, his possible criminal sexual activity, do not give optimists much room for joy.  But beyond that, I think we should stop looking for a hero in our leaders. Stop looking for a perfect person to fix it, and start the process of building real local politics that still has a global reach, building bridges out to people near u but not like us, and also building actual bridges we can grow a stronger global community.
 
 I maybe insane, but perhaps that's the price of optimism anyway.
+
+Edit: no, I have changed my mind.  We're all fucked.
