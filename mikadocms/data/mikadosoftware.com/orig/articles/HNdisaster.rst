@@ -32,6 +32,12 @@ But no matter what, I have been sorted into the basket of deplorables.
 
 Actually this last point is not fair. I have reread the post and - I really failed to convey my thoughts. What is posted there is ... a horrific comment. (I can remember what I meant. I can see where I missed out indicative punctuation. But thats not the point is it.) Totally not what I meant and hopefully would never ever think. But someone I respect has come back with "well thats not actually out of character for you Paul.  We were thinking of banning your account for some of the stuff you have said".  That has shaken me deeply and I would like to know what has lead them there.  And how can I adjust my public statements to better reflect me.
 
+So I herewith apologise to everyone on HN or elsewhere for posting text that reads so horrifically. Even if I did not mean it, I still wrote it.
+
+I also need to think about why I post stuff too quickly, why I chose such am inflammatory subject to post on anyway, and why I did not review.
+
+Fewer words. More thought.
+
 I am going to take a bit of a break.
 
 I have spent many years on HN (and am probably a little too anxious to be this close to 10,000). 
