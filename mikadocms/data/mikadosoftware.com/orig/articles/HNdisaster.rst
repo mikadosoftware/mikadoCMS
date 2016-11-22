@@ -28,26 +28,26 @@ But no matter what, I have been sorted into the basket of deplorables.
 
 - Am I actually deplorable? 
 
-- Or is it all the fault of those evil moderators ? (Just a joke :-)
+- Or is it all the fault of those evil moderators ?  
 
-I am going to take a bit of a break and then come back and see which option it was.
+Actually this last point is not fair. I have reread the post and - I really failed to convey my thoughts. What is posted there is ... a horrific comment. (I can remember what I meant. I can see where I missed out indicative punctuation. But thats not the point is it.) Totally not what I meant and hopefully would never ever think. But someone I respect has come back with "well thats not actually out of character for you Paul.  We were thinking of banning your account for some of the stuff you have said".  That has shaken me deeply and I would like to know what has lead them there.  And how can I adjust my public statements to better reflect me.
 
-I have spent many years on HN (and, am probably a little too anxious to be this close to 10,000). 
+I am going to take a bit of a break.
+
+I have spent many years on HN (and am probably a little too anxious to be this close to 10,000). 
 
 Apart from satirical news shows on radio 4, it's my main source of information on the world. (This may of course not be a great thing.)
 
-So a break is called for - I check too often, and while Facebook is often criticised by us for its addictive-like properties, I still obsessively check HN morning and night and am sooo close to 10k and my last couple of submissions did feel more like testing the reactions, not sharing something.  
-
-I am however worried that I won't see how this incident will (may?) get treated - as I said my reputation matters to me. 
+So a break is called for - I check too often, and while Facebook is often criticised by us for its addictive-like properties, I still obsessively check HN morning and night and am sooo close to 10k and my last couple of submissions did feel more like testing the reactions for points, not sharing something.  
 
 I am sure cold turkey will last a day, maybe a couple of weeks.  Please don't discover fusion power while I am away.  I really want to comment on that.
 
- 
 
 
 
 
-(Actually re-re-re-reading my offending post I can see I meant to put a question mark (or more ??!!) at the end of the first paragraph - so a challenge to the poster looks a lot like a statement of .. oh fuck me what a disaster
-It really does read like a trolling post - I can quite see what happened there.  But the "other posts violating our guidelines indicates its a good time to take a break till I understand more)
+
+(Actually re-re-re-reading my offending post I can see I meant to put a question mark (or more ??!!) at the end of the first paragraph - so a challenge to the poster looks a lot like a statement of .. oh fuck me what a disaster.  I was remembering what I meant, not reading what I actually wrote.  It really does read like a trolling post - I can quite see what happened there.  But the "other posts violating our guidelines" indicates its a good time to take a break till I have processed things.)
 
 Start here: https://news.ycombinator.com/reply?id=13010342&goto=threads%3Fid%3Dlifeisstillgood%2313010342
+
