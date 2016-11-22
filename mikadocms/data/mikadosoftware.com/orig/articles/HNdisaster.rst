@@ -51,6 +51,6 @@ So a break is called for - I check too often, and while Facebook is often critic
 
 Start here: https://news.ycombinator.com/reply?id=13010342&goto=threads%3Fid%3Dlifeisstillgood%2313010342
 
-I am sure cold turkey will last a day, maybe a couple of weeks.  Please don't discover fusion power while I am away.  I really want to comment on that.
+I am sure cold turkey will last a day, maybe a couple of weeks.  Please don't discover working fusion power while I am away.  I really want to comment on that.
 
 
