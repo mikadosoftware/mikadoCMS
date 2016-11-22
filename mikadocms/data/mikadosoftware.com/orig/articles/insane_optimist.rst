@@ -32,4 +32,4 @@ The Donald's personal traits, his possible criminal sexual activity, do not give
 
 I maybe insane, but perhaps that's the price of optimism anyway.
 
-Edit: no, I have changed my mind.  We're all fucked.
+Edit: no, I have changed my mind.  His deplorable personal characteristics seem now to be outweighed by his worse politics of discrimination and division. His apparent appointments are deeply worrying.  Perhaps we can hope that just as Obama had enormous trouble implementing his policies in face of Congress, so will Trump.  The United States is a large oil tanker that will turn slowly.  Insane optimism as I said.
