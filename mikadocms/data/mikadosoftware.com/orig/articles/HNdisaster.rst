@@ -46,14 +46,11 @@ Apart from satirical news shows on radio 4, it's my main source of information o
 
 So a break is called for - I check too often, and while Facebook is often criticised by us for its addictive-like properties, I still obsessively check HN morning and night and am sooo close to 10k and my last couple of submissions did feel more like testing the reactions for points, not sharing something.  
 
-I am sure cold turkey will last a day, maybe a couple of weeks.  Please don't discover fusion power while I am away.  I really want to comment on that.
-
-
-
-
-
 
 (Actually re-re-re-reading my offending post I can see I meant to put a question mark (or more ??!!) at the end of the first paragraph - so a challenge to the poster looks a lot like a statement of .. oh fuck me what a disaster.  I was remembering what I meant, not reading what I actually wrote.  It really does read like a trolling post - I can quite see what happened there.  But the "other posts violating our guidelines" indicates its a good time to take a break till I have processed things.)
 
 Start here: https://news.ycombinator.com/reply?id=13010342&goto=threads%3Fid%3Dlifeisstillgood%2313010342
+
+I am sure cold turkey will last a day, maybe a couple of weeks.  Please don't discover fusion power while I am away.  I really want to comment on that.
+
 
