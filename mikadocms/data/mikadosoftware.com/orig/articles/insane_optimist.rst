@@ -32,4 +32,9 @@ The Donald's personal traits, his possible criminal sexual activity, do not give
 
 I maybe insane, but perhaps that's the price of optimism anyway.
 
-Edit: no, I have changed my mind.  We're all fucked.
+Edit: No. it's really really bad. Optimism is not going to help here.  He recently tweeted that two
+Million or more, *two million* votes had been fraudulently cast for Hillary. In Florida 2000 the election hinged on 300 votes that were contentious - if people can spot 300 votes in one state, but 16 years later miss two million. Oh come on. Maybe we can forgive that crap on the campaign trail.  Not now.
+
+And the conflicts of interest. They are bad. Really bad. What happens when the financier he is building Trump Tower with in Whatever-Stan is found by the CIA to be working with ... oh it's a long list but let's go with helping ISIS gain oil revenue.  The decisions on that are tough. Go public? Watch him? Shoot him? Turn him. The decisions on that should not be influenced by wondering if the President will get paid on the next stage of the Tower.
+
+This is bad. 
