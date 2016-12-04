@@ -6,9 +6,9 @@ is, as the whole campaign has been, an exception.
 
 There is of course an element of post-hoc rationalisation as we come to accept that The Donald will be The Prez.  Which is why as a life-long optimist, I suspect I am being only slightly insane in saying "this might just work."
 
-Firstly Donald is, in his bones and his building methods, a "borrow and spend" guy. And with both chambers now Republican, with an electorate that voted on jobs, with Trumps acceptance speech itself talking of building infrastructure and creating millions of jobs doing so, it is a safe bet to say Keynesianism is back on Americas agenda.  Obama consistently had Jobs programs denied him by Congress, a trick they will find almost impossible to play with a white Republican. 
+Firstly Donald is, in his bones and his building methods, a "borrow and spend" guy. And with both chambers now Republican, with an electorate that voted on jobs, with Trumps acceptance speech itself talking of building infrastructure and creating millions of jobs doing so, it is a safe bet to say Keynesianism is back on Americas agenda.  Obama consistently had Jobs programs denied him by Congress, a trick they will find almost impossible to play with a Republican. 
 
-In the U.K. We have just started to suffer from Brexit, but the fiscal response is starting to turn to building our way out.  As ever, the US may be about to show the way.
+In the U.K. We have just started to suffer from Brexit, but the fiscal policy response is starting to turn to building our way out (but not nearly as clearly as I would like).  As ever, the US may be about to show the way.
 
 But Trumps win is more than a economic condition - it is a cultural win, mixed up in ill-defined racism, distrust of federal government and a feeling of a 1% that is out of touch.  There are, just as in Brexit, genuine problems and failures that need fixing being mixed up in a heady brew of hatred and anger.
 
