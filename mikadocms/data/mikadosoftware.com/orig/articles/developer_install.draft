@@ -2,6 +2,10 @@
 setup.py and developer installs
 ===============================
 
+
+https://github.com/pypa/sampleproject/blob/master/setup.py
+
+
 Generally Python installs and deployments are a bit of a mess.
 Not an unusable mess, but compared to the usually simple and
 clear headed methods that most Python code provides, the morass of
