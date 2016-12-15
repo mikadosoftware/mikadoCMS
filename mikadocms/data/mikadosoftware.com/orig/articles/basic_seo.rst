@@ -61,6 +61,42 @@ And an excellent piece of advice from Patrick Mackenzie, which I precis as::
     
     Just learn the basics, and produce good clean content relevant to your ideal customers.  Google, and they, will find you.
     
+    
+Summary
+-------
+
+Start with basic measurements on your own site
+  Google Analytics is a good start
+  Download this
+  
+Focus on Outcomes
+  Conversion rate, funnels etc
+
+Have metrics for measuring success (outcomes)
+  measure them
+  
+Customer voice
+  the words that customers use and ask for
+
+
+
+
+
+Competitor Analysis
+-------------------
+
+Start with HEAD terms, (glass splashback) and baseline trends over time
+Do this for 20 or so terms that bring you traffic, or you think bring you traffic
+Use brands in this area as well
+
+Start to add terms to extend the tail
+
+
+
+Actionable Steps
+----------------
+
+
 
 
 Initial Steps
