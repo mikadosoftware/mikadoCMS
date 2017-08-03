@@ -6,13 +6,14 @@ I think the right way to do this is not to try and get employed by GDS (which is
 
 So I rather enthusiastically at first and now just so-so, I try and apply for government software contracts that look likely to be real candidates for open software.
 
-And then we get this - a "coroner management system". A replacement for 
+And then we get this - a "coroner management system". A replacement for a current *IRIS* database - Noah used one of those to count the animals.
 
 ::
 
   Open Source software should be avoided as far as possible but, if used, your tender will be evaluated...
   
 Really I despair.
+
 No matter the efforts centrally put in, the real consumers and drivers of the billions of pounds in software are outside of GDS' reach - and this is the attitude.
 
 I think the pump needs a lot of priming - and I think the best way now is to go find a couple of right wing dribbling billionaires from Texas and tell them that the governments of the world are slowly going to be adopting open software for their services  - and the last great act of American empire will be to write the code that governments across the world will use day in and day out. No sneaky elliptic curve adjustments but just those baked in western assumptions - combined girls and boys registers for schools to use each morning, that sort of thing.
