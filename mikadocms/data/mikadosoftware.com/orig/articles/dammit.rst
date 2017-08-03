@@ -1,6 +1,6 @@
 Ok, I am not the greatest Open Source developer on the planet. My commit messages often leave a lot to be desired, and snatching a few tens of minutes between job, kids, commutes and life for coding something is never the best way, but I do have a dream.  
 
-I even write about it - to spend time doing what I love (creating code) and in so doing building something that makes a public good - government services that are open.
+I even write about it (http://www.mikadosoftware.com/articles/govuk_contracting) to spend time doing what I love (creating code) and in so doing building something that makes a public good - government services that are open.
 
 I think the right way to do this is not to try and get employed by GDS (which is a nice thing sure, but they cannot write all the code for all the services government needs).  What is going to have to happen is departments and authorities have to prime the pump, pay someone to make a kernel of a service and grow it into an open, maintained piece of real software, with community and support.
 
