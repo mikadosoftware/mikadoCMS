@@ -1,0 +1,1 @@
+- radicalism is simply being willing to do today that which will be mere commonsense in thirty years
